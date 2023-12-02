@@ -1,0 +1,61 @@
+# This file configures the static analysis results for your project (errors,
+# warnings, and lints).
+#
+# This enables the 'recommended' set of lints from `package:lints`.
+# This set helps identify many issues that may lead to problems when running
+# or consuming Dart code, and enforces writing Dart using a single, idiomatic
+# style and format.
+#
+# If you want a smaller set of lints you can change this to specify
+# 'package:lints/core.yaml'. These are just the most critical lints
+# (the recommended set includes the core lints).
+# The core lints are also what is used by pub.dev for scoring packages.
+
+include: package:lints/recommended.yaml
+
+linter:
+ rules:
+   - camel_case_types
+   - avoid_print: false
+   - always_use_package_imports
+   - avoid_relative_lib_imports
+   - avoid_empty_else
+   - empty_statements
+   - avoid_slow_async_io
+   - cancel_subscriptions
+   - hash_and_equals
+   - no_logic_in_create_state
+   - throw_in_finally
+   - camel_case_extensions
+   - camel_case_types
+   - library_names
+   - library_prefixes
+   - no_leading_underscores_for_library_prefixes
+   - cascade_invocations
+   - eol_at_end_of_file
+   - leading_newlines_in_multiline_strings
+   - missing_whitespace_between_adjacent_strings
+   - no_leading_underscores_for_local_identifiers
+   - prefer_conditional_assignment
+   - prefer_if_null_operators
+   - prefer_interpolation_to_compose_strings
+   - prefer_is_empty
+   - prefer_is_not_empty
+   - prefer_is_not_operator
+   - provide_deprecation_message
+   - unnecessary_await_in_return
+   - use_if_null_to_convert_nulls_to_bools
+   - use_named_constants
+   - use_string_buffers
+   - secure_pubspec_urls
+   - prefer_single_quotes  # Uncomment to enable the `prefer_single_quotes` rule
+
+# analyzer:
+#   exclude:
+#     - path/to/excluded/files/**
+
+# For more information about the core and recommended set of lints, see
+# https://dart.dev/go/core-lints
+
+# For additional information about configuring this file, see
+# https://dart.dev/guides/language/analysis-options
