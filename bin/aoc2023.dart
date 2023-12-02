@@ -1,14 +1,26 @@
-
 import 'package:aoc2023/day1.dart';
+import 'package:aoc2023/day2.dart';
 
 Future<void> main(List<String> arguments) async {
-  print('Hello Advent of Code 2023!');
+  print('Hello Advent of Code 2023 with Dart!');
 
-  Day1 day1 = Day1();
-  int day1Part1Result = await day1.part1Result();
-  int day1Part2Result = await day1.part2Result();
+  {
+    var day = Day1();
+    int part1Result = await day.part1();
+    int part2Result = await day.part2();
 
-  print('Day1 results:');
-  print('- Part 1: $day1Part1Result');
-  print('- Part 2: $day1Part2Result');
+    print('Day 1 results:');
+    print('- Part 1: $part1Result');
+    print('- Part 2: $part2Result');
+  }
+
+  {
+    var day = Day2();
+    int part1Result = await day.part1();
+    int part2Result = await day.part2();
+
+    print('Day2 results:');
+    print('- Part 1: $part1Result');
+    print('- Part 2: $part2Result');
+  }
 }

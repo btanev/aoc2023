@@ -1,14 +1,14 @@
 import 'dart:io';
 
 class Day1 {
-  final File _input = File('./day1_input.txt');
-  Future<List<String>> get inputLines => _input.readAsLines();
+  final File _input = File('./input/day1.txt');
+  Future<List<String>> get _inputLines => _input.readAsLines();
 
   /// The newly-improved calibration document consists of lines of text; each line originally contained a specific
   /// calibration value that the Elves now need to recover. On each line, the calibration value can be found by combining
   /// the first digit and the last digit (in that order) to form a single two-digit number.
-  Future<int> part1Result() async {
-    final List<String> inputLines = await this.inputLines;
+  Future<int> part1() async {
+    final List<String> inputLines = await _inputLines;
     final RegExp regExp = RegExp('[0-9]');
 
     List<int> lineResults = [];
@@ -25,8 +25,8 @@ class Day1 {
 
   /// Your calculation isn't quite right. It looks like some of the digits are actually spelled out with letters: one,
   /// two, three, four, five, six, seven, eight, and nine also count as valid "digits".
-  Future<int> part2Result() async {
-    List<String> inputLines = await this.inputLines;
+  Future<int> part2() async {
+    List<String> inputLines = await _inputLines;
     List<int> lineResults = [];
 
     final List<String> numberStrings = ['one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine'];
