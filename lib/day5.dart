@@ -63,6 +63,10 @@ class Day5 {
     Almanac almanac = await parseMap();
     List<int> seedStartAndRange = almanac.seeds;
 
+    // /ideas how to improve the algorithm
+    // - start traversing from locations to seeds, locations sets is much less than seeds
+    // - add a 1st / 2nd level caching of results
+
     DateTime start = DateTime.timestamp();
 
     List<Future<int>> runners = [];
