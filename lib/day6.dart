@@ -53,6 +53,8 @@ List<int> getWinHoldTimes(Race race) {
 
     if (distanceMm > race.recordMm) {
       holdTimes.add(holdTimeMs);
+    } else if (holdTimes.isNotEmpty) {
+      break;
     }
   }
 
