@@ -5,6 +5,7 @@ import 'package:aoc2023/day4.dart';
 import 'package:aoc2023/day5.dart';
 import 'package:aoc2023/day6.dart';
 import 'package:aoc2023/day7.dart';
+import 'package:aoc2023/day8.dart';
 
 Future<void> main(List<String> arguments) async {
   print('Hello Advent of Code 2023 with Dart!');
@@ -117,6 +118,22 @@ Future<void> main(List<String> arguments) async {
     var durationPart2 = DateTime.now().millisecondsSinceEpoch - startTime.millisecondsSinceEpoch;
 
     print('Day 7 results:');
+    print('- Part 1 ($durationPart1 ms): $part1');
+    print('- Part 2 ($durationPart2 ms): $part2');
+  }
+
+  {
+    var day = Day8();
+
+    var startTime = DateTime.now();
+    var part1 = await day.part1();
+    var durationPart1 = DateTime.now().millisecondsSinceEpoch - startTime.millisecondsSinceEpoch;
+
+    startTime = DateTime.now();
+    var part2 = await day.part2();
+    var durationPart2 = DateTime.now().millisecondsSinceEpoch - startTime.millisecondsSinceEpoch;
+
+    print('Day 8 results:');
     print('- Part 1 ($durationPart1 ms): $part1');
     print('- Part 2 ($durationPart2 ms): $part2');
   }

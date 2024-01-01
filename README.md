@@ -6,3 +6,4 @@
 - [Day 5](lib/day5.dart)
 - [Day 6](lib/day6.dart)
 - [Day 7](lib/day7.dart)
+- [Day 8](lib/day8.dart)
